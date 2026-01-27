@@ -1,0 +1,564 @@
+Uri: https://charitics.temptics.com/404.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\404.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/about.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\about.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/assets/css/style.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\css\style.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.eot?46578acd7effe4a6a4f6b87164297015
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.svg?46578acd7effe4a6a4f6b87164297015
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.ttf?46578acd7effe4a6a4f6b87164297015
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.ttf
+Content Type: font/ttf
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.woff2?46578acd7effe4a6a4f6b87164297015
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.woff2
+Content Type: font/woff2
+
+Uri: https://charitics.temptics.com/assets/icon/flaticon_charitics.woff?46578acd7effe4a6a4f6b87164297015
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\icon\flaticon_charitics.woff
+Content Type: font/woff
+
+Uri: https://charitics.temptics.com/assets/img/404-img.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\404-img.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/about-2-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-2-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/about-block-icon-bg.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-block-icon-bg.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/about-block-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-block-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/about-img-vector-1.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-img-vector-1.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/about-img-vector-2.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-img-vector-2.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/about-img.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-img.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/about-vector-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\about-vector-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/banner-2-slide-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-2-slide-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/banner-2-slide-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-2-slide-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/banner-2-slide-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-2-slide-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/banner-bg-shape.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-bg-shape.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/banner-img-vector-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-img-vector-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/banner-img-vector-2.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-img-vector-2.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/banner-img.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\banner-img.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/blog-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/blog-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/blog-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/blog-b-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-b-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/blog-b-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-b-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/blog-b-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\blog-b-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/breadcrumb-bg.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\breadcrumb-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/commenter-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\commenter-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/commenter-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\commenter-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/contact-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\contact-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/cta-bg.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\cta-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/cta-vector.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\cta-vector.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/donate-form-2-bg.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donate-form-2-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donate-form-bg.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donate-form-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donate-form-vector.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donate-form-vector.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/donate-form-wrapper-bg.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donate-form-wrapper-bg.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/donation-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-4.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-4.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-details-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-details-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-details-inner-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-details-inner-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donation-details-inner-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donation-details-inner-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donations-bg-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donations-bg-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/donations-bg.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\donations-bg.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/event-details.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\event-details.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/event-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\event-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/events-vector-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\events-vector-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/events-vector-2.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\events-vector-2.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/footer-vector-img.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\footer-vector-img.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-2.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-2.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-3.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-3.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-4.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-4.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-5.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-5.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/gallery-item-6.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\gallery-item-6.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/left-arrow.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\left-arrow.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/logo-white.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\logo-white.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/logo.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/member-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-4.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-4.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-5.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-5.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-6.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-6.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-7.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-7.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/member-8.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\member-8.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/mission-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\mission-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/mission.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\mission.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/project-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\project-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/project-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\project-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/project-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\project-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/project-4.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\project-4.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/project-details-img-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\project-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/quote-icon-white.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\quote-icon-white.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/quote-icon.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\quote-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/reviewer-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\reviewer-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/reviewer-2.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\reviewer-2.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/reviewer-3.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\reviewer-3.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/reviewer-4.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\reviewer-4.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/right-arrow.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\right-arrow.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/service-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/service-2.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-2.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/service-3.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-3.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/service-4.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-4.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/service-bg.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-bg.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/service-details-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-details-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/service-details-video-cover.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\service-details-video-cover.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/stat-bg.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\stat-bg.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/stats-events-bg-shape.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\stats-events-bg-shape.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/team-details-img.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\team-details-img.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/user-1.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\user-1.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/user-2.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\user-2.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/user-3.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\user-3.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/vector-img.png
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\vector-img.png
+Content Type: image/png
+
+Uri: https://charitics.temptics.com/assets/img/vision.svg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\vision.svg
+Content Type: image/svg+xml
+
+Uri: https://charitics.temptics.com/assets/img/volunteer-bg-1.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\volunteer-bg-1.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/img/why-join.jpg
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\img\why-join.jpg
+Content Type: image/jpeg
+
+Uri: https://charitics.temptics.com/assets/js/accordion.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\js\accordion.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/js/donate-form.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\js\donate-form.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/js/main.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/js/progressbar.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\js\progressbar.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/js/tab.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\js\tab.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/animate-wow/animate.min.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\animate-wow\animate.min.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/animate-wow/wow.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\animate-wow\wow.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/bootstrap/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\bootstrap\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/bootstrap/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\bootstrap\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/flatpickr/flatpickr.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\flatpickr\flatpickr.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/flatpickr/flatpickr.min.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\flatpickr\flatpickr.min.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/fslightbox/fslightbox.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\fslightbox\fslightbox.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/mixitup/mixitup.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\mixitup\mixitup.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/slim-select/slimselect.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\slim-select\slimselect.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/slim-select/slimselect.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\slim-select\slimselect.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/splide/splide-extension-auto-scroll.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\splide\splide-extension-auto-scroll.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/splide/splide.min.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\splide\splide.min.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/splide/splide.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\splide\splide.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/splittype/index.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\splittype\index.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/assets/vendor/swiper/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\swiper\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://charitics.temptics.com/assets/vendor/swiper/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\assets\vendor\swiper\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://charitics.temptics.com/blog-2.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\blog-2.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/blog-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\blog-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/blog.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\blog.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/contact.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\contact.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/donation-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\donation-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/donations.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\donations.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/event-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\event-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/events.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\events.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/faq.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\faq.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/index-2.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\index-2.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/index.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\index.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/pricing.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\pricing.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/project-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\project-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/projects.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\projects.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/service-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\service-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/services.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\services.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/team-details.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\team-details.html
+Content Type: text/html
+
+Uri: https://charitics.temptics.com/team.html
+File Name: C:\Downloaded Web Sites\charitics.temptics.com\team.html
+Content Type: text/html
+
