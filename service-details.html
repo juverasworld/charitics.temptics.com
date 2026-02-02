@@ -176,9 +176,9 @@
         <section class="ul-service-details ul-section-spacing">
             <div class="ul-container">
                 <div>
-                    <div class="ul-service-details-img">
+                    <!-- <div class="ul-service-details-img">
                         <img src="assets/img/service-details-1.jpg" alt="Image">
-                    </div>
+                    </div> -->
                     <div class="ul-service-details-txt">
                         <h2 class="ul-service-details-title">Development Programs</h2>
                         <p class="ul-service-details-descr">BaseCreate is pleased to announce that it has been commissioned by Leighton Asia reposition its brand. We will help Leighton Asia evolve its brand strategy, For almost 50 years Leighton Asia, one of the region’s largest and most respected construction companies, has been progressively building for a better future by </p>
@@ -380,6 +380,169 @@
     <!-- FOOTER SECTION END -->
 
     <!-- libraries JS -->
+     <script>
+const servicesData = {
+  fundraising: {
+    title: "Fundraising & Donations",
+    descr: [
+      "Support our programs by donating to fund education, healthcare, and community initiatives for those in need.",
+      "Every donation helps us reach more children and families across different regions."
+    ],
+    inner1: {
+      title: "Remarkable Services",
+      descr: "We organize events and campaigns to maximize impact in fundraising and community support."
+    },
+    video: {
+      img: "assets/img/mine/people-doing-volunteer-work-foodbank.jpg",
+      link: "https://youtu.be/C2FFe5FiAqc?si=8p0Skg8lyxgHQCpg"
+    },
+    descr3: "Your contributions help us deliver long-lasting value for the communities we serve.",
+    inner2: {
+      title: "Services All Details",
+      descr: "Here’s what we cover in our full range of services:",
+      list: [
+        "Support children’s education",
+        "Provide healthcare and medical supplies",
+        "Assist community development projects",
+        "Empower widows and vulnerable groups",
+        "Participate in fundraising events"
+      ]
+    }
+  },
+  medical: {
+    title: "Medical Assistance",
+    descr: [
+      "Providing medical care and support for children, widows, and vulnerable families.",
+      "Our programs focus on preventive care and urgent medical needs."
+    ],
+    inner1: {
+      title: "Healthcare Services",
+      descr: "We run medical camps, supply medicines, and provide awareness campaigns."
+    },
+    video: {
+      img: "assets/img/service-2.jpg",
+      link: "https://youtu.be/exampleLink"
+    },
+    descr3: "We aim to improve health outcomes in underserved communities.",
+    inner2: {
+      title: "Services All Details",
+      descr: "Our medical assistance programs include:",
+      list: [
+        "Medical camps",
+        "Support for critical illnesses",
+        "Health education",
+        "Distribution of medical supplies",
+        "Partnerships with hospitals"
+      ]
+    }
+  },
+  childhealth: {
+    title: "Child Health Research",
+    descr: [
+      "Research and initiatives focused on improving children’s health.",
+      "We work with families and schools to gather data and create impact programs."
+    ],
+    inner1: {
+      title: "Research Programs",
+      descr: "Our research covers nutrition, disease prevention, and community health awareness."
+    },
+    video: {
+      img: "assets/img/mine/4.jpg",
+      link: "https://youtu.be/exampleLink2"
+    },
+    descr3: "We publish findings and help shape health policies for children.",
+    inner2: {
+      title: "Services All Details",
+      descr: "Our child health programs include:",
+      list: [
+        "Nutrition research",
+        "Study of common diseases",
+        "Health education programs",
+        "Workshops for parents",
+        "Collaborations with hospitals and schools"
+      ]
+    }
+  },
+  community: {
+    title: "Community Development",
+    descr: [
+      "Empowering communities with skill-building programs, educational support, and social development projects.",
+      "We aim to create sustainable, local solutions that improve lives."
+    ],
+    inner1: {
+      title: "Community Programs",
+      descr: "From education to skills training, we support communities to thrive."
+    },
+    video: {
+      img: "assets/img/mine/Diverse People in Refugee Camps.jpg",
+      link: "https://youtu.be/exampleLink3"
+    },
+    descr3: "Our goal is long-term growth and empowerment for every community we work with.",
+    inner2: {
+      title: "Services All Details",
+      descr: "Our community development programs include:",
+      list: [
+        "Skill-building programs",
+        "Educational support",
+        "Social development projects",
+        "Community events",
+        "Local empowerment initiatives"
+      ]
+    }
+  }
+};
+
+// Get the service key from URL
+const params = new URLSearchParams(window.location.search);
+const serviceKey = params.get("service");
+
+if (serviceKey && servicesData[serviceKey]) {
+  const data = servicesData[serviceKey];
+
+  // Main title
+  document.querySelector(".ul-service-details-title").textContent = data.title;
+
+  // Main paragraphs
+  const descrEls = document.querySelectorAll(".ul-service-details-descr");
+  if(descrEls.length >= 3) {
+    descrEls[0].textContent = data.descr[0] || "";
+    descrEls[1].textContent = data.descr[1] || "";
+    descrEls[2].textContent = data.descr3 || "";
+  }
+
+  // Inner block 1
+  const inner1 = document.querySelector('.ul-service-details-inner-block:first-of-type');
+  if(inner1) {
+    inner1.querySelector('.ul-service-details-inner-title').textContent = data.inner1.title;
+    inner1.querySelector('.ul-service-details-descr').textContent = data.inner1.descr;
+  }
+
+  // Video block
+  const videoImg = document.querySelector('.ul-service-details-video-cover img');
+  const videoLink = document.querySelector('.ul-service-details-video-cover a');
+  if(videoImg) {
+    videoImg.src = data.video.img;
+    videoImg.alt = data.title;
+  }
+  if(videoLink) videoLink.href = data.video.link;
+
+  // Inner block 2
+  const inner2 = document.querySelectorAll('.ul-service-details-inner-block')[1];
+  if(inner2) {
+    inner2.querySelector('.ul-service-details-inner-title').textContent = data.inner2.title;
+    inner2.querySelector('.ul-service-details-descr').textContent = data.inner2.descr;
+
+    const ul = inner2.querySelector('ul');
+    ul.innerHTML = "";
+    data.inner2.list.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+  }
+}
+</script>
+
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/splide/splide.min.js"></script>
     <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>

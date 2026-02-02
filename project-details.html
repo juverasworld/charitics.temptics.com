@@ -409,6 +409,126 @@
     <!-- FOOTER SECTION END -->
 
     <!-- libraries JS -->
+     <script>
+const projects = {
+  medical: {
+    title: "Free Medical Service",
+    description: "Annual health care outreach providing checkups, tests, consultations, and free drugs for widows and the community.",
+    category: "Health Outreach",
+    date: "27 December (Annually)",
+    images: [
+  "assets/img/mine/widow1.jpg",
+      "assets/img/mine/widow2.jpg",
+      "assets/img/mine/close-up-community-concept-with-hands.jpg"
+    ]
+  },
+  "widows-care": {
+    title: "Widows’ Care Outreach",
+    description: "Food, clothing, prayers, encouragement, and financial support for aged and vulnerable widows.",
+    category: "Widow Support",
+    date: "28 December (Annually)",
+    images: [
+      "assets/img/mine/widow1.jpg",
+      "assets/img/mine/widow2.jpg",
+      "assets/img/mine/widow3.jpg"
+    ]
+  },
+  skills: {
+    title: "Skills & Empowerment Programme",
+    description: "Practical skills training and business empowerment for self-reliance.",
+    category: "Empowerment",
+    date: "Annual",
+    images: [
+      "assets/img/project-details-img-7.jpg",
+      "assets/img/project-details-img-8.jpg",
+      "assets/img/project-details-img-9.jpg"
+    ]
+  },
+  prayer: {
+    title: "Mid-Year Prayer Gathering",
+    description: "A dedicated time of prayer, thanksgiving, and intercession held every first Saturday of July.",
+    category: "Spiritual Support",
+    date: "July (Mid-Year)",
+    images: [
+      "assets/img/project-details-img-10.jpg",
+      "assets/img/project-details-img-11.jpg",
+      "assets/img/project-details-img-12.jpg"
+    ]
+  },
+  education: {
+    title: "Education & Welfare Support",
+    description: "Support for school fees, hospital bills, and welfare needs of widows, orphans, and the less privileged.",
+    category: "Welfare",
+    date: "Ongoing",
+    images: [
+      "assets/img/project-details-img-13.jpg",
+      "assets/img/project-details-img-14.jpg",
+      "assets/img/project-details-img-15.jpg"
+    ]
+  },
+  "micro-lending": {
+    title: "Micro-Lending Initiative",
+    description: "Cooperative-based small loans to help widows start or stabilize sustainable businesses.",
+    category: "Economic Empowerment",
+    date: "December (Reintroduced)",
+    images: [
+      "assets/img/project-details-img-16.jpg",
+      "assets/img/project-details-img-17.jpg",
+      "assets/img/project-details-img-18.jpg"
+    ]
+  }
+};
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const projectKey = params.get("project");
+
+  if (!projects[projectKey]) return;
+
+  const project = projects[projectKey];
+
+  // TEXT UPDATES (no layout change)
+  document.querySelector(".ul-event-details-title").textContent = project.title;
+  document.querySelector(".ul-event-details-descr").textContent = project.description;
+  document.querySelector(".ul-project-details-infos-list .value").textContent = project.category;
+
+  // IMAGE SLIDER (maintains exact structure)
+  const swiperWrapper = document.querySelector(
+    ".ul-project-details-img-slider .swiper-wrapper"
+  );
+
+  swiperWrapper.innerHTML = "";
+
+  project.images.forEach(src => {
+    swiperWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="swiper-slide">
+        <div>
+          <img src="${src}" alt="Image">
+        </div>
+      </div>
+      `
+    );
+  });
+
+  // RE-INITIALIZE SWIPER (this preserves design)
+  new Swiper(".ul-project-details-img-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".ul-project-details-slider-nav .next",
+      prevEl: ".ul-project-details-slider-nav .prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 0,
+  });
+});
+</script>
+
+
+
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/splide/splide.min.js"></script>
     <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>

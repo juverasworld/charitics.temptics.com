@@ -44,7 +44,7 @@ CSS INDEX
 34. Pricing Page
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 :root {
   --black: #000;
@@ -63,7 +63,49 @@ CSS INDEX
   --font-primary: "Manrope", serif;
   --font-quicksand: "Quicksand", serif;
   --font-caveat: "Caveat", serif;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  /* Base */
+  --black: #000;
+  --white: #fff;
+
+  /* Brand colors (muted rose + warm mauve) */
+  --ul-primary: #A94A4A;      /* warm muted rose */
+  --ul-secondary: #C97C7C;    /* soft blush */
+
+  /* Backgrounds (WARM BUT NOT ORANGE) */
+  --ul-c4: #F9F7F8;           /* soft blush-white page bg */
+  --ul-gray3: #EFEAEC;        /* warm stone section bg */
+  --ul-c3: #EDE3E6;           /* subtle highlight bg */
+
+  /* Accent */
+  --ul-c5: #8F3F3F;           /* deeper rose accent */
+
+  /* Text colors */
+  --ul-black: #2E2A2A;        /* warm charcoal */
+  --ul-p: #4B4446;            /* body text */
+  --ul-gray: #7A6E72;         /* muted text */
+  --ul-gray2: #D5CDD0;        /* borders / dividers */
+
+  /* Gradient */
+  --ul-gradient: linear-gradient(
+    90deg,
+    var(--ul-primary) 0%,
+    var(--ul-secondary) 100%
+  );
+
+  /* Fonts */
+  --font-primary: "Merriweather", serif;
+  --font-heading: "Playfair Display", serif;
+  --font-ui: "Poppins", sans-serif;
+  --font-bungee: "Bungee", cursive;
+  --font-montserrat: "Montserrat", sans-serif;
 }
+
+
 
 html {
   overflow-x: hidden;
@@ -438,7 +480,7 @@ button {
 }
 
 .ul-breadcrumb {
-  background: url(../img/breadcrumb-bg.jpg) no-repeat center center;
+  background: url(../img/mine/6.jpg) no-repeat center center;
   background-size: cover;
   padding: clamp(50px, 9.98vw, 190px) 0 clamp(40px, 9.46vw, 180px);
   text-align: center;
@@ -1678,7 +1720,13 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(101.64deg, rgba(235, 83, 16, 0.9) 1.87%, rgba(235, 83, 16, 0.1) 98.72%);
+  background: linear-gradient(
+  101.64deg,
+  rgba(169, 74, 74, 0.9) 1.87%,   /* --ul-primary deep muted rose */
+  rgba(201, 124, 124, 0.1) 98.72% /* --ul-secondary soft blush */
+);
+
+  /* background: linear-gradient(101.64deg, rgba(235, 83, 16, 0.9) 1.87%, rgba(235, 83, 16, 0.1) 98.72%); */
   pointer-events: none;
 }
 .ul-banner-2-slide-bg-img {
@@ -2244,7 +2292,7 @@ button {
   justify-content: center;
   flex-direction: column;
   background: no-repeat center center/cover;
-  background-image: url(../img/stat-bg.png);
+  background-image: url(../img/mine/close-up-community-concept-outdoors.jpg);
   transition: 0.4s ease;
   position: relative;
   z-index: 1;
@@ -3526,7 +3574,7 @@ button {
 }
 
 .ul-volunteer-block {
-  background: url(../img/volunteer-bg-1.jpg) no-repeat center center/cover;
+  background: url(../img/mine/Great\ Migration\ AI\ Image.jpg) no-repeat center center/cover;
   position: relative;
   z-index: 1;
   padding: clamp(25px, 2.1vw, 40px) clamp(15px, 8.41vw, 160px);
@@ -3542,7 +3590,12 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 87, 40, 0.9);
+  background: 
+  rgba(169, 74, 74, 0.9);   /* --ul-primary with 0.9 opacity */
+  /* rgba(201, 124, 124, 0.1) 98.72% --ul-secondary soft blush */
+
+
+  /* background: rgba(255, 87, 40, 0.9); */
   z-index: -1;
 }
 .ul-volunteer-block .ul-btn {
@@ -3592,7 +3645,7 @@ button {
 }
 
 .ul-donate-form-wrapper-2 {
-  background-image: url(../img/donate-form-2-bg.jpg);
+  background-image: url(../img/mine/Diverse\ People\ in\ Refugee\ Camps\ \(1\).jpg);
 }
 .ul-donate-form-wrapper-2::before {
   background-color: var(--ul-black);
@@ -3615,7 +3668,7 @@ button {
 }
 
 .ul-services {
-  background: url(../img/service-bg.png) #F5F0E2 no-repeat center center/cover;
+  background: url(../img/service-bg.png) #b39748 no-repeat center center/cover;
 }
 .ul-services-slider-nav {
   transform: none;
