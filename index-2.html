@@ -1,1014 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charitics - NGO & Non Profit HTML Template</title>
+    <title>Vera of the Good Life - Animated Logo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;300&display=swap');
 
-    <!-- libraries CSS -->
-    <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
-    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
-    <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #faf8f3;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Organic background animation */
+        .bg-gradient {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(255, 237, 213, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(230, 204, 178, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(245, 222, 179, 0.2) 0%, transparent 60%);
+            animation: morphBackground 20s ease-in-out infinite;
+        }
+
+        @keyframes morphBackground {
+            0%, 100% {
+                transform: translate(-25%, -25%) rotate(0deg);
+            }
+            50% {
+                transform: translate(-30%, -30%) rotate(5deg);
+            }
+        }
+
+        .logo-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SVG Organic shapes */
+        .organic-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        /* Flowing vine illustration */
+        .vine-left, .vine-right {
+            position: absolute;
+            width: 200px;
+            height: 400px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            animation: growVine 3s ease-out forwards;
+        }
+
+        .vine-left {
+            left: -50px;
+            animation-delay: 0.5s;
+        }
+
+        .vine-right {
+            right: -50px;
+            animation-delay: 0.7s;
+            transform: translateY(-50%) scaleX(-1);
+        }
+
+        @keyframes growVine {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Main text container */
+        .text-container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        /* Custom VERA text with unique styling */
+        .vera-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 8rem;
+            font-weight: 300;
+            color: #3d3127;
+            position: relative;
+            display: inline-block;
+            margin-bottom: -20px;
+        }
+
+        .vera-text span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(40px) rotate(-5deg);
+            animation: letterDrop 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        }
+
+        .vera-text span:nth-child(1) { animation-delay: 0.1s; }
+        .vera-text span:nth-child(2) { animation-delay: 0.2s; }
+        .vera-text span:nth-child(3) { animation-delay: 0.3s; }
+        .vera-text span:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes letterDrop {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Unique brushstroke underline */
+        .brushstroke {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 120%;
+            height: 8px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 20"><path d="M 0 10 Q 125 2, 250 10 T 500 10" stroke="%23c9a96e" stroke-width="6" fill="none" stroke-linecap="round"/></svg>') no-repeat center;
+            background-size: 100% 100%;
+            animation: drawStroke 1.5s ease-out 0.8s forwards;
+            opacity: 0.8;
+        }
+
+        @keyframes drawStroke {
+            to {
+                transform: translateX(-50%) scaleX(1);
+            }
+        }
+
+        /* Subtitle with unique spacing */
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 200;
+            letter-spacing: 0.8em;
+            color: #7a6e5d;
+            text-transform: lowercase;
+            margin-top: 35px;
+            opacity: 0;
+            animation: fadeInSubtitle 1.5s ease-out 1.2s forwards;
+            position: relative;
+        }
+
+        .subtitle::before,
+        .subtitle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+        }
+
+        .subtitle::before {
+            right: calc(100% + 20px);
+        }
+
+        .subtitle::after {
+            left: calc(100% + 20px);
+        }
+
+        @keyframes fadeInSubtitle {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Botanical elements */
+        .leaf {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            opacity: 0;
+        }
+
+        .leaf-1 {
+            top: 10%;
+            left: 15%;
+            animation: leafFloat 4s ease-in-out 1.5s infinite, leafFadeIn 1s ease-out 1.5s forwards;
+        }
+
+        .leaf-2 {
+            top: 20%;
+            right: 12%;
+            animation: leafFloat 5s ease-in-out 2s infinite, leafFadeIn 1s ease-out 2s forwards;
+            animation-direction: reverse;
+        }
+
+        .leaf-3 {
+            bottom: 15%;
+            left: 20%;
+            animation: leafFloat 4.5s ease-in-out 2.5s infinite, leafFadeIn 1s ease-out 2.5s forwards;
+        }
+
+        .leaf-4 {
+            bottom: 25%;
+            right: 18%;
+            animation: leafFloat 5.5s ease-in-out 3s infinite, leafFadeIn 1s ease-out 3s forwards;
+        }
+
+        @keyframes leafFloat {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-15px) rotate(5deg);
+            }
+        }
+
+        @keyframes leafFadeIn {
+            to {
+                opacity: 0.3;
+            }
+        }
+
+        /* Delicate dots pattern */
+        .dot-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .dot {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #c9a96e;
+            border-radius: 50%;
+            animation: dotPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes dotPulse {
+            0%, 100% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.5);
+            }
+        }
+
+        /* Light rays effect */
+        .light-ray {
+            position: absolute;
+            width: 2px;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent, rgba(201, 169, 110, 0.3), transparent);
+            top: -75px;
+            left: 50%;
+            transform-origin: center center;
+            opacity: 0;
+            animation: rayGlow 6s ease-in-out 2s infinite;
+        }
+
+        @keyframes rayGlow {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                opacity: 0.6;
+                transform: translateY(20px) rotate(2deg);
+            }
+        }
+
+        /* Interactive hover states */
+        .text-container:hover .vera-text {
+            animation: gentleSway 2s ease-in-out infinite;
+        }
+
+        @keyframes gentleSway {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-0.5deg);
+            }
+            75% {
+                transform: rotate(0.5deg);
+            }
+        }
+
+        /* Watercolor blob */
+        .watercolor-blob {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(ellipse at center, rgba(201, 169, 110, 0.08) 0%, transparent 70%);
+            border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+            animation: blobMorph 15s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes blobMorph {
+            0%, 100% {
+                border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            50% {
+                border-radius: 60% 40% 30% 70% / 60% 50% 50% 40%;
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div class="preloader" id="preloader">
-        <div class="loader"></div>
+    <div class="bg-gradient"></div>
+    
+    <div class="logo-container">
+        <!-- Watercolor background -->
+        <div class="watercolor-blob"></div>
+        
+        <!-- Light rays -->
+        <div class="light-ray" style="transform: rotate(-15deg); animation-delay: 2s;"></div>
+        <div class="light-ray" style="transform: rotate(15deg); animation-delay: 2.5s;"></div>
+        
+        <!-- Organic vines SVG -->
+        <svg class="vine-left" viewBox="0 0 200 400">
+            <path d="M 100 0 Q 80 50, 90 100 T 70 200 Q 60 250, 80 300 T 100 400" 
+                  stroke="#a8946f" 
+                  stroke-width="1.5" 
+                  fill="none" 
+                  stroke-linecap="round"
+                  opacity="0.4"/>
+            <circle cx="90" cy="100" r="8" fill="#c9a96e" opacity="0.3">
+                <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="70" cy="200" r="6" fill="#d4b896" opacity="0.3">
+                <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="80" cy="300" r="7" fill="#c9a96e" opacity="0.3">
+                <animate attributeName="r" values="7;9;7" dur="3.5s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+        
+        <svg class="vine-right" viewBox="0 0 200 400">
+            <path d="M 100 0 Q 80 50, 90 100 T 70 200 Q 60 250, 80 300 T 100 400" 
+                  stroke="#a8946f" 
+                  stroke-width="1.5" 
+                  fill="none" 
+                  stroke-linecap="round"
+                  opacity="0.4"/>
+            <circle cx="90" cy="100" r="8" fill="#c9a96e" opacity="0.3">
+                <animate attributeName="r" values="8;10;8" dur="3.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="70" cy="200" r="6" fill="#d4b896" opacity="0.3">
+                <animate attributeName="r" values="6;8;6" dur="4.2s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+        
+        <!-- Botanical leaves -->
+        <svg class="leaf leaf-1" viewBox="0 0 40 60">
+            <path d="M 20 0 Q 35 20, 30 40 Q 25 55, 20 60 Q 15 55, 10 40 Q 5 20, 20 0" 
+                  fill="#b89968" opacity="0.5"/>
+        </svg>
+        
+        <svg class="leaf leaf-2" viewBox="0 0 40 60">
+            <path d="M 20 0 Q 35 20, 30 40 Q 25 55, 20 60 Q 15 55, 10 40 Q 5 20, 20 0" 
+                  fill="#c9a96e" opacity="0.5"/>
+        </svg>
+        
+        <svg class="leaf leaf-3" viewBox="0 0 40 60">
+            <path d="M 20 0 Q 35 20, 30 40 Q 25 55, 20 60 Q 15 55, 10 40 Q 5 20, 20 0" 
+                  fill="#d4b896" opacity="0.5"/>
+        </svg>
+        
+        <svg class="leaf leaf-4" viewBox="0 0 40 60">
+            <path d="M 20 0 Q 35 20, 30 40 Q 25 55, 20 60 Q 15 55, 10 40 Q 5 20, 20 0" 
+                  fill="#a8946f" opacity="0.5"/>
+        </svg>
+        
+        <!-- Main text -->
+        <div class="text-container">
+            <div class="vera-text">
+                <span>V</span><span>E</span><span>R</span><span>A</span>
+                <div class="brushstroke"></div>
+            </div>
+            <div class="subtitle">of the good life</div>
+        </div>
+        
+        <!-- Dot pattern -->
+        <div class="dot-pattern" id="dotPattern"></div>
     </div>
 
-    <!-- SIDEBAR SECTION START -->
-    <div class="ul-sidebar">
-        <!-- header -->
-        <div class="ul-sidebar-header">
-            <div class="ul-sidebar-header-logo">
-                <a href="index.html">
-                    <img src="assets/img/logo.svg" alt="logo" class="logo">
-                </a>
-            </div>
-            <!-- sidebar closer -->
-            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
-        </div>
-
-        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
-
-
-        <!-- sidebar footer -->
-        <div class="ul-sidebar-footer">
-            <span class="ul-sidebar-footer-title">Follow us</span>
-
-            <div class="ul-sidebar-footer-social">
-                <a href="#"><i class="flaticon-facebook"></i></a>
-                <a href="#"><i class="flaticon-twitter"></i></a>
-                <a href="#"><i class="flaticon-instagram"></i></a>
-                <a href="#"><i class="flaticon-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- SIDEBAR SECTION END -->
-
-    <!-- SEARCH MODAL SECTION START -->
-    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
-        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
-
-        <form action="#" class="ul-search-form">
-            <div class="ul-search-form-right">
-                <input type="search" name="search" id="ul-search" placeholder="Search Here">
-                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
-            </div>
-        </form>
-    </div>
-    <!-- SEARCH MODAL SECTION END -->
-
-    <!-- HEADER SECTION START -->
-    <header class="ul-header ul-header-2">
-        <div class="ul-header-top">
-            <div class="ul-header-top-wrapper ul-header-container">
-                <div class="ul-header-top-left">
-                    <span class="address"><i class="flaticon-pin"></i> Rd. Santa Ana, Illinois 85486, United States</span>
-                </div>
-                <div class="ul-header-top-right">
-                    <div class="ul-header-top-social">
-                        <span class="title">Follow us: </span>
-                        <div class="links">
-                            <a href="#"><i class="flaticon-facebook"></i></a>
-                            <a href="#"><i class="flaticon-twitter"></i></a>
-                            <a href="#"><i class="flaticon-instagram"></i></a>
-                            <a href="#"><i class="flaticon-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ul-header-bottom to-be-sticky">
-            <div class="ul-header-bottom-wrapper ul-header-container">
-                <div class="logo-container">
-                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo.svg" alt="logo" class="logo"></a>
-                </div>
-
-                <!-- header nav -->
-                <div class="ul-header-nav-wrapper">
-                    <div class="to-go-to-sidebar-in-mobile">
-                        <nav class="ul-header-nav">
-                            <div class="has-sub-menu">
-                                <a role="button">Home</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="about.html">About</a>
-                            <div class="has-sub-menu">
-                                <a role="button">Pages</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="service-details.html">Service Details</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="team-details.html">Team Member Details</a></li>
-                                        <li><a href="pricing.html">Pricing Plans</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="has-sub-menu">
-                                <a role="button">Donation</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="donations.html">Donation Listing</a></li>
-                                        <li><a href="donation-details.html">Donation Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="has-sub-menu">
-                                <a role="button">Event</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="events.html">Events</a></li>
-                                        <li><a href="event-details.html">Event Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="has-sub-menu">
-                                <a role="button">Blog</a>
-
-                                <div class="ul-header-submenu">
-                                    <ul>
-                                        <li><a href="blog.html">Blogs</a></li>
-                                        <li><a href="blog-2.html">Blogs Layout 2</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="contact.html">Contact</a>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- actions -->
-                <div class="ul-header-actions">
-                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
-                    <a href="contact.html" class="ul-btn d-sm-inline-flex d-none"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Join With us </a>
-                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-menu"></i></button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- HEADER SECTION END -->
-
-
-    <main>
-        <!-- BANNER SECTION START -->
-        <section class="ul-banner ul-banner-2">
-             <div class="ul-banner-2-slider swiper">
-        <div class="swiper-wrapper">
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <!-- bg img -->
-                    <img src="/assets/img/mine/African Women Together.jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <!-- banner text -->
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Opening Hands, Restoring Dignity
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Empowering Widows And The Less Privileged
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        We support widows and vulnerable communities through care, medical outreach,
-                                        empowerment programmes, and compassion that creates lasting impact.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <!-- bg img -->
-                    <img src="/assets/img/mine/Diverse People in Refugee Camps (1).jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <!-- banner text -->
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Compassion In Action
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Supporting Health, Hope, And Community Care
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        Through free medical services, prayer, and counselling, we serve widows and
-                                        families with dignity, love, and consistent community support.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <!-- bg img -->
-                    <img src="/assets/img/mine/Great Migration AI Image.jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <!-- banner text -->
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Faith, Care, And Empowerment
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Helping Widows Build Sustainable Futures
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        We provide skills training, financial support, and guidance that help widows
-                                        regain confidence, stability, and purpose in life.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <img src="assets/img/mine/African Women Together.jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Opening Hands, Changing Lives
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Standing With Widows Through Every Season
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        Our outreach brings care, encouragement, and essential support to widows who
-                                        need hope, healing, and a strong community.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <img src="assets/img/mine/Diverse People in Refugee Camps (1).jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Care That Reaches Further
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Serving Communities Beyond Widowhood
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        Our programmes extend care to families, orphans, and the less privileged through
-                                        health services, education support, and empowerment.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- slider item -->
-            <div class="swiper-slide">
-                <div class="ul-banner-2-slide">
-                    <img src="assets/img/mine/Great Migration AI Image.jpg" alt="Slide Background Image" class="ul-banner-2-slide-bg-img">
-                    <div class="row gy-4 align-items-center ">
-                        <div class="col-md-7">
-                            <div class="ul-banner-txt">
-                                <div class="wow animate__fadeInUp">
-                                    <span class="ul-banner-sub-title ul-section-sub-title">
-                                        Together We Can Do More
-                                    </span>
-                                    <h1 class="ul-banner-title">
-                                        Join Us In Restoring Hope And Dignity
-                                    </h1>
-                                    <p class="ul-banner-descr">
-                                        With your support, Open Hand Foundation continues to uplift widows and the
-                                        vulnerable through compassion-driven outreach and service.
-                                    </p>
-                                    <div class="ul-banner-btns">
-                                        <a href="donations.html" class="ul-btn">
-                                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-            <!-- slider navigation -->
-            <div class="ul-banner-2-slider-navigation">
-                <button class="prev"><img src="assets/img/left-arrow.svg" alt="arrow"></button>
-                <div class="ul-banner-2-thumb-slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/img/mine/Diverse People in Refugee Camps (1).jpg" alt="Banner Thumb"></div>
-                        <div class="swiper-slide"><img src="assets/img/mine/African Women Together.jpg" alt="Banner Thumb"></div>
-                        <div class="swiper-slide"><img src="assets/img/mine/Diverse People in Refugee Camps.jpg" alt="Banner Thumb"></div>
-                        <div class="swiper-slide"><img src="assets/img/mine/Great Migration AI Image.jpg" alt="Banner Thumb"></div>
-                        <div class="swiper-slide"><img src="assets/img/mine/Diverse People in Refugee Camps (1).jpg" alt="Banner Thumb"></div>
-                        <div class="swiper-slide"><img src="assets/img/mine/African Women Together.jpg" alt="Banner Thumb"></div>
-                    </div>
-                </div>
-                <button class="next"><img src="assets/img/right-arrow.svg" alt="arrow"></button>
-            </div>
-        </section>
-        <!-- BANNER SECTION END -->
-
-
-        <!-- FEATURES SECTION START -->
-        <section class="ul-features ul-section-spacing">
-            <div class="ul-container">
-                <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4 justify-content-center">
-                    <!-- single feature -->
-                    <div class="col">
-                        <div class="ul-feature">
-                            <div class="ul-feature-icon">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path d="M35.2962 9.02488L18.3509 3.04614C18.1239 2.96598 17.8762 2.96598 17.6491 3.04614L0.703829 9.02488C0.282517 9.17352 0.000563343 9.57149 8.42838e-07 10.0183C-0.000561657 10.465 0.280477 10.8636 0.701438 11.0132L17.6468 17.0374C17.761 17.0781 17.8805 17.0984 18 17.0984C18.1195 17.0984 18.239 17.0781 18.3532 17.0374L35.2986 11.0132C35.7195 10.8636 36.0005 10.465 36 10.0183C35.9994 9.57149 35.7175 9.17352 35.2962 9.02488Z" fill="#EB5310" />
-                                        <path d="M33.4668 23.1029V13.9032L31.3574 14.6531V23.1029C30.7221 23.4686 30.2939 24.1538 30.2939 24.9395C30.2939 25.7252 30.7221 26.4105 31.3574 26.7762V31.9593C31.3574 32.5418 31.8296 33.014 32.4121 33.014C32.9946 33.014 33.4668 32.5418 33.4668 31.9593V26.7762C34.1021 26.4106 34.5303 25.7253 34.5303 24.9396C34.5303 24.1538 34.1022 23.4686 33.4668 23.1029Z" fill="#EB5310" />
-                                        <path d="M18 19.2078C17.638 19.2078 17.2814 19.1463 16.9402 19.025L7.41406 15.6384V20.2796C7.41406 21.415 8.59862 22.3753 10.9348 23.1335C12.9711 23.7945 15.4803 24.1585 18 24.1585C20.5197 24.1585 23.0289 23.7945 25.0652 23.1335C27.4014 22.3753 28.586 21.415 28.586 20.2796V15.6384L19.0599 19.025C18.7186 19.1463 18.3621 19.2078 18 19.2078Z" fill="#EB5310" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <h3 class="ul-feature-title">Education & School Support</h3>
-                        </div>
-                    </div>
-
-                    <!-- single feature -->
-                    <div class="col">
-                        <div class="ul-feature">
-                            <div class="ul-feature-icon">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path d="M17.99 4.74549C10.1431 -2.11775 0.165878 3.91249 0.00227293 12.0875C-0.0394192 14.1709 0.561988 16.2003 1.75911 18.0712H9.51849L10.8986 15.7709C11.2994 15.1031 12.2692 15.0816 12.6926 15.7474L15.6046 20.3232L19.8492 11.3624C20.2194 10.5806 21.3226 10.5557 21.7308 11.3139L25.3694 18.0712H34.2209C40.7779 7.82326 27.8191 -3.85132 17.99 4.74549Z" fill="#EB5310" />
-                                        <path d="M23.8108 19.6258L20.8624 14.1502L16.6931 22.952C16.3384 23.7008 15.2951 23.7658 14.8503 23.0667L11.8292 18.3194L11.0197 19.6684C10.8291 19.9861 10.4859 20.1804 10.1154 20.1804H3.42725C3.6369 20.3998 2.51951 19.2847 17.246 33.9348C17.6573 34.3441 18.3222 34.3442 18.7335 33.9348C33.2334 19.5101 32.343 20.3994 32.5523 20.1804H24.7393C24.3513 20.1805 23.9947 19.9674 23.8108 19.6258Z" fill="#EB5310" />
-                                    </g>
-                                </svg>
-                            </div>
-                           <h3 class="ul-feature-title">Free Medical & Health Care Services</h3>
-                        </div>
-                    </div>
-
-                    <!-- single feature -->
-                    <div class="col">
-                        <div class="ul-feature">
-                            <div class="ul-feature-icon">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.2078 7.34403L20.5198 4.10403L20.1598 3.81603C19.2238 2.95203 17.7838 2.95203 16.9198 3.81603L15.6238 5.11203C15.6238 5.18403 16.1278 5.97603 17.2078 7.34403Z" fill="#FC633B" />
-                                    <path d="M30.528 20.088L30.6 20.16L31.896 18.864C32.184 18.576 32.4 18.216 32.472 17.784L29.304 19.296C29.736 19.584 30.168 19.8 30.528 20.088Z" fill="#FC633B" />
-                                    <path d="M26.4238 3.60002C26.8558 3.38402 27.2158 3.31202 27.6478 3.31202C28.0798 3.31202 28.5118 3.38402 28.9438 3.60002L27.1438 1.80002C26.2078 0.864022 24.6958 0.864022 23.7598 1.80002L18.0718 7.48802L26.4238 3.60002Z" fill="#FC633B" />
-                                    <path d="M34.3438 9.07204L30.3838 5.04004L33.9838 12.744L34.3438 12.384C35.2798 11.52 35.2798 10.008 34.3438 9.07204Z" fill="#FC633B" />
-                                    <path d="M29.736 5.40002C29.232 4.24802 27.864 3.81602 26.784 4.32002L18 8.42402C18.432 9.00002 18.864 9.50402 19.368 10.008L25.92 6.91202C26.424 8.06402 27.792 8.56802 28.944 7.99202L31.248 12.888C30.096 13.392 29.592 14.76 30.168 15.912L27 17.424C27.576 17.856 28.08 18.288 28.656 18.72C28.728 18.792 28.728 18.792 28.8 18.792L32.76 16.92C33.912 16.416 34.344 15.048 33.84 13.968L29.736 5.40002Z" fill="#FC633B" />
-                                    <path d="M24.5519 13.032C23.9039 11.664 22.6079 11.016 21.5279 11.52C21.3119 11.592 21.0959 11.736 20.9519 11.952C22.1039 13.176 23.3279 14.328 24.6239 15.48C24.9839 14.76 24.9839 13.896 24.5519 13.032Z" fill="#FC633B" />
-                                    <path d="M15.0479 5.61603L1.58386 19.152C1.36786 19.368 1.22386 19.584 1.15186 19.8L3.45586 19.512H3.88786C4.82386 19.512 5.68786 19.872 6.33586 20.52L15.2639 29.52C15.9839 30.24 16.3439 31.32 16.2719 32.4L15.9839 34.704C16.1999 34.632 16.4159 34.488 16.6319 34.272L30.1679 20.736C29.5199 20.232 28.8719 19.8 28.2239 19.296C22.9679 15.264 18.5759 10.728 15.0479 5.61603Z" fill="#FC633B" />
-                                    <path d="M5.75988 21.024C5.18388 20.448 4.31988 20.16 3.52788 20.232L1.00788 20.592C0.935885 21.168 1.15188 21.744 1.65588 22.248L13.6799 34.272C14.1119 34.704 14.7599 34.92 15.3359 34.92L15.6959 32.4C15.7679 31.536 15.5519 30.744 14.9039 30.168L5.75988 21.024Z" fill="#FC633B" />
-                                </svg>
-                            </div>
-                             <h3 class="ul-feature-title">Skills & Economic Empowerment</h3>
-                        </div>
-                    </div>
-
-                    <!-- single feature -->
-                    <div class="col">
-                        <div class="ul-feature">
-                            <div class="ul-feature-icon">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M35.0999 16.642C35.0999 20.5527 31.9271 23.6886 28.0533 23.6886H8.79504C4.44164 23.6886 0.899902 20.1469 0.899902 15.7935C0.899902 11.2187 4.81058 7.52937 9.45911 7.8983C10.8242 3.91386 14.6611 1.10999 18.9407 1.10999C23.9951 1.10999 28.164 4.79931 28.865 9.66919C32.3698 10.0381 35.0999 13.0265 35.0999 16.642Z" fill="#FC633B" />
-                                    <path d="M8.15492 27.637C10.0519 30.594 10.0519 31.5425 10.0519 31.8493C10.0519 33.5231 8.68495 34.89 7.01117 34.89C5.33739 34.89 3.97046 33.5231 3.97046 31.8493C3.97046 31.5425 3.97046 30.6219 5.86741 27.637C6.09058 27.2464 6.53693 27.0233 6.98326 27.0233C7.45751 27.0233 7.87595 27.2464 8.15492 27.637Z" fill="#FC633B" />
-                                    <path d="M19.1437 27.637C21.0406 30.594 21.0406 31.5425 21.0406 31.8493C21.0406 33.5231 19.6737 34.89 17.9999 34.89C16.3262 34.89 14.9592 33.5231 14.9592 31.8493C14.9592 31.5425 14.9592 30.6219 16.8562 27.637C17.0793 27.2464 17.5257 27.0233 17.972 27.0233C18.4463 27.0233 18.8647 27.2464 19.1437 27.637Z" fill="#FC633B" />
-                                    <path d="M30.1325 27.637C32.0294 30.594 32.0294 31.5425 32.0294 31.8493C32.0294 33.5231 30.6625 34.89 28.9887 34.89C27.3149 34.89 25.948 33.5231 25.948 31.8493C25.948 31.5425 25.948 30.6219 27.8449 27.637C28.0681 27.2464 28.5145 27.0233 28.9608 27.0233C29.435 27.0233 29.8535 27.2464 30.1325 27.637Z" fill="#FC633B" />
-                                </svg>
-                            </div>
-                                  <h3 class="ul-feature-title">Community Care & Support</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FEATURES SECTION END -->
-
-
-       <section class="ul-volunteer">
-    <div class="row row-cols-md-2 row-cols-1 g-0">
-        <!-- volunteer block -->
-        <div class="col">
-            <div class="ul-volunteer-block">
-                <h2 class="ul-volunteer-title">Serve With Open Hands</h2>
-                <p class="ul-volunteer-descr">
-                    Join us in supporting widows and the less privileged through care, compassion,
-                    and practical help that transforms lives and communities.
-                </p>
-                <ul class="ul-volunteer-list">
-                    <li>Support Widows & Less Privileged</li>
-                    <li>Volunteer Your Time & Skills</li>
-                    <li>Partner With Our Outreach Programs</li>
-                </ul>
-                <a href="#" class="ul-btn">
-                    <i class="flaticon-fast-forward-double-right-arrows-symbol"></i>
-                    Become A Volunteer
-                </a>
-            </div>
-        </div>
-
-        <!-- donate form -->
-        <div class="col">
-            <div class="ul-volunteer-block ul-donate-form-wrapper-2">
-                <h2 class="ul-volunteer-title">Support Our Outreach</h2>
-                <p class="ul-volunteer-descr">
-                    Your gift helps provide food, medical care, empowerment programs,
-                    and hope for widows and the less privileged.
-                </p>
-                <form action="#" class="ul-donate-form ul-donate-form-2">
-                    <div>
-                        <input type="radio" name="donate-amount" id="donate-amount-1" checked hidden>
-                        <label for="donate-amount-1" class="ul-donate-form-label">$10</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="donate-amount" id="donate-amount-2" hidden>
-                        <label for="donate-amount-2" class="ul-donate-form-label">$20</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="donate-amount" id="donate-amount-3" hidden>
-                        <label for="donate-amount-3" class="ul-donate-form-label">$30</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="donate-amount" id="donate-amount-4" hidden>
-                        <label for="donate-amount-4" class="ul-donate-form-label">$40</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="donate-amount" id="donate-amount-5" hidden>
-                        <label for="donate-amount-5" class="ul-donate-form-label">$50</label>
-                    </div>
-
-                    <div class="custom-amount-wrapper">
-                        <input type="radio" name="donate-amount" id="custom-amount">
-                        <label for="donate-amount-custom" class="ul-donate-form-label">
-                            <input type="number" name="custom-amount" id="donate-amount-custom" placeholder="Custom Amount" class="ul-donate-form-custom-input">
-                        </label>
-                    </div>
-
-                    <div>
-                        <button type="submit" class="ul-btn">
-                            <i class="flaticon-fast-forward-double-right-arrows-symbol"></i>
-                            Donate Now
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-        <!-- VOLUNTEER SECTION END -->
-
-
-        <!-- ABOUT SECTION START -->
-      <section class="ul-about ul-about-2 ul-section-spacing wow animate__fadeInUp">
-    <div class="ul-container">
-        <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
-            <div class="col">
-                <div class="ul-about-imgs ul-about-2-img">
-                    <div class="img-wrapper">
-                        <img src="assets/img/mine/8.jpg" alt="Image">
-                    </div>
-
-                    <div class="ul-about-2-stat">
-                        <span class="number">28+</span>
-                        <span class="txt">Years of Community Service</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- txt -->
-            <div class="col">
-                <div class="ul-about-txt">
-                    <span class="ul-section-sub-title ul-section-sub-title--2">About OHFWLP</span>
-                    <h2 class="ul-section-title">Caring for Widows and the Less Privileged is Our Calling</h2>
-                    <p class="ul-section-descr">
-                        Open Hands Foundation for Widows and Less Privileged (OHFWLP) has been supporting widows,
-                        less privileged individuals, and their communities through medical care, empowerment programs,
-                        skills training, and consistent outreach since 1996.
-                    </p>
-
-                    <div class="ul-about-bottom ul-about-2-bottom">
-                        <div class="ul-about-2-bottom-block">
-                            <div class="ul-about-2-bottom-block-icon"><img src="assets/img/mission.svg" alt="icon"></div>
-                            <div class="ul-about-2-bottom-block-txt">
-                                <h3 class="ul-about-2-bottom-block-title">Our Mission</h3>
-                                <p class="ul-about-2-bottom-block-descr">
-                                    To provide care, support, and empowerment to widows and less privileged people,
-                                    ensuring dignity, opportunity, and hope.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="ul-about-2-bottom-block">
-                            <div class="ul-about-2-bottom-block-icon"><img src="assets/img/vision.svg" alt="icon"></div>
-                            <div class="ul-about-2-bottom-block-txt">
-                                <h3 class="ul-about-2-bottom-block-title">Our Vision</h3>
-                                <p class="ul-about-2-bottom-block-descr">
-                                    A society where widows and less privileged individuals are empowered,
-                                    healthy, and fully supported to thrive.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="about.html" class="ul-btn">
-                        <i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Explore More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- ABOUT SECTION END -->
-
-
-        <!-- SERVICES SECTION START -->
-<section class="ul-services ul-section-spacing overflow-hidden">
-    <div class="ul-container">
-        <div class="ul-section-heading">
-            <div>
-                <span class="ul-section-sub-title">Together, We Can Transform Lives.</span>
-                <h2 class="ul-section-title">Open Hands Foundation for Widows and Less Privileged Services You’ll Truly Love</h2>
-            </div>
-
-            <div class="ul-services-slider-nav ul-slider-nav position-static">
-                <button class="prev"><i class="flaticon-back"></i></button>
-                <button class="next"><i class="flaticon-next"></i></button>
-            </div>
-        </div>
-
-        <div class="ul-services-slider swiper overflow-visible">
-            <div class="swiper-wrapper">
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="ul-service">
-                        <div class="ul-service-img">
-                            <img src="assets/img/mine/different-people-doing-volunteer-work-with-food.jpg" alt="Service Image">
-                        </div>
-                        <div class="ul-service-txt">
-                            <h3 class="ul-service-title"><a href="service-details.html">Fundraising & Donations</a></h3>
-                            <p class="ul-service-descr">Raising funds and mobilizing resources to support widows, less privileged children, and communities in need.</p>
-                            <a href="service-details.html" class="ul-service-btn"><i class="flaticon-up-right-arrow"></i> View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="ul-service">
-                        <div class="ul-service-img">
-                            <img src="assets/img/service-2.jpg" alt="Service Image">
-                        </div>
-                        <div class="ul-service-txt">
-                            <h3 class="ul-service-title"><a href="service-details.html">Medical Treatment Assistance</a></h3>
-                            <p class="ul-service-descr">Providing medical care, treatment support, and health services to widows, children, and vulnerable community members.</p>
-                            <a href="service-details.html" class="ul-service-btn"><i class="flaticon-up-right-arrow"></i> View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="ul-service">
-                        <div class="ul-service-img">
-                            <img src="assets/img/mine/10.jpg" alt="Service Image">
-                        </div>
-                        <div class="ul-service-txt">
-                            <h3 class="ul-service-title"><a href="service-details.html">Child Research & Support</a></h3>
-                            <p class="ul-service-descr">Conducting research and providing assistance programs focused on child health, education, and wellbeing.</p>
-                            <a href="service-details.html" class="ul-service-btn"><i class="flaticon-up-right-arrow"></i> View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="ul-service">
-                        <div class="ul-service-img">
-                            <img src="assets/img/mine/people-doing-volunteer-work-foodbank.jpg" alt="Service Image">
-                        </div>
-                        <div class="ul-service-txt">
-                            <h3 class="ul-service-title"><a href="service-details.html">Empowerment & Development Programs</a></h3>
-                            <p class="ul-service-descr">Vocational training, skill acquisition, and livelihood programs to empower widows and less privileged individuals.</p>
-                            <a href="service-details.html" class="ul-service-btn"><i class="flaticon-up-right-arrow"></i> View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS SECTION START -->
-<section class="ul-projects ul-section-spacing">
-    <div class="ul-container">
-        <div class="ul-section-heading text-center justify-content-center">
-            <div>
-                <span class="ul-section-sub-title">Our Completed Projects</span>
-                <h2 class="ul-section-title">Open Hands Foundation for Widows and Less Privileged Projects Making Real Impact</h2>
-            </div>
-        </div>
-
-        <div class="row ul-bs-row justify-content-center">
-            <div class="col-lg-8 col-md-6 col-10 col-xxs-12">
-                <div class="ul-project">
-                    <div class="ul-project-img">
-                        <img src="assets/img/mine/3.jpg" alt="Project Image">
-                    </div>
-                    <div class="ul-project-txt">
-                        <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Child Health & Care Program</a></h3>
-                            <p class="ul-project-descr">Supporting children’s health, nutrition, and welfare in vulnerable communities.</p>
-                        </div>
-                        <a href="project-details.html" class="ul-project-btn"><i class="flaticon-up-right-arrow"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-10 col-xxs-12">
-                <div class="ul-project ul-project--sm">
-                    <div class="ul-project-img">
-                        <img src="assets/img/mine/widow2.jpg" alt="Project Image">
-                    </div>
-                    <div class="ul-project-txt">
-                        <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Widow Support Initiative</a></h3>
-                            <p class="ul-project-descr">Providing financial, social, and emotional support to widows across communities.</p>
-                        </div>
-                        <a href="project-details.html" class="ul-project-btn"><i class="flaticon-up-right-arrow"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-10 col-xxs-12">
-                <div class="ul-project ul-project--sm">
-                    <div class="ul-project-img">
-                        <img src="assets/img/mine/people-doing-volunteer-work-foodbank.jpg" alt="Project Image">
-                    </div>
-                    <div class="ul-project-txt">
-                        <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Empowerment & Skills Training</a></h3>
-                            <p class="ul-project-descr">Vocational programs to equip widows and youth with marketable skills.</p>
-                        </div>
-                        <a href="project-details.html" class="ul-project-btn"><i class="flaticon-up-right-arrow"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-8 col-md-6 col-10 col-xxs-12">
-                <div class="ul-project">
-                    <div class="ul-project-img">
-                        <img src="assets/img/mine/close-up-community-concept-outdoors.jpg" alt="Project Image">
-                    </div>
-                    <div class="ul-project-txt">
-                        <div>
-                            <h3 class="ul-project-title"><a href="project-details.html">Community Health Outreach</a></h3>
-                            <p class="ul-project-descr">Organizing medical outreach programs and awareness campaigns in underserved areas.</p>
-                        </div>
-                        <a href="project-details.html" class="ul-project-btn"><i class="flaticon-up-right-arrow"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- PROJECTS SECTION END -->
-
-
-<!-- CTA(CALL TO ACTION) SECTION START -->
-<section class="ul-cta" style="margin-bottom: 40px;">
-    <div class="ul-container">
-        <span class="ul-section-sub-title">Support Vulnerable Children Today</span>
-        <h2 class="ul-cta-title">Make a Difference in a Child’s Life by Donating Now</h2>
-        <a href="#" class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Donate Now</a>
-    </div>
-    <img src="assets/img/cta-vector.svg" alt="Vector" class="ul-cta-vector">
-</section>
-<!-- CTA(CALL TO ACTION) SECTION END -->
-
-
-<!-- CONTACT SECTION START -->
-<section class="ul-contact">
-    <div class="ul-container">
-        <div class="row g-0">
-            <div class="col-lg-5">
-                <div class="ul-contact-img">
-                    <img src="assets/img/contact-img.jpg" alt="Contact Image">
-                </div>
-            </div>
-
-            <!-- form -->
-            <div class="col-lg-7">
-                <div class="ul-contact-form-wrapper">
-                    <span class="ul-section-sub-title">Get In Touch</span>
-                    <h2 class="ul-section-title">Send Us a Message About Your Donation</h2>
-
-                    <form action="#" class="ul-contact-form">
-                        <div class="row row-cols-2 row-cols-xxs-1 ul-bs-row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="ul-contact-name" placeholder="Your Name">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="email" name="email" id="ul-contact-email" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="tel" name="phone" id="ul-contact-phone" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" name="subject" id="ul-contact-subject" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea name="message" id="ul-contact-msg" placeholder="Type your message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="ul-btn"><i class="flaticon-fast-forward-double-right-arrows-symbol"></i> Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-     
-    </main>
-
-
-    <!-- FOOTER SECTION START -->
-    <footer class="ul-footer">
-        <div class="ul-footer-top">
-            <div class="ul-footer-container">
-                <div class="ul-footer-top-contact-infos">
-                    <!-- single info -->
-                    <div class="ul-footer-top-contact-info">
-                        <!-- icon -->
-                        <div class="ul-footer-top-contact-info-icon">
-                            <div class="ul-footer-top-contact-info-icon-inner">
-                                <i class="flaticon-pin"></i>
-                            </div>
-                        </div>
-                        <!-- txt -->
-                        <div class="ul-footer-top-contact-info-txt">
-                            <span class="ul-footer-top-contact-info-label">Address</span>
-                            <h5 class="ul-footer-top-contact-info-address">4648 Rocky Road Philadelphia PA, 1920</h5>
-                        </div>
-                    </div>
-
-                    <!-- single info -->
-                    <div class="ul-footer-top-contact-info">
-                        <!-- icon -->
-                        <div class="ul-footer-top-contact-info-icon">
-                            <div class="ul-footer-top-contact-info-icon-inner">
-                                <i class="flaticon-email"></i>
-                            </div>
-                        </div>
-                        <!-- txt -->
-                        <div class="ul-footer-top-contact-info-txt">
-                            <span class="ul-footer-top-contact-info-label">Send Email</span>
-                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:info@exmple.com">info@exmple.com</a></h5>
-                        </div>
-                    </div>
-
-                    <!-- single info -->
-                    <div class="ul-footer-top-contact-info">
-                        <!-- icon -->
-                        <div class="ul-footer-top-contact-info-icon">
-                            <div class="ul-footer-top-contact-info-icon-inner">
-                                <i class="flaticon-telephone-call-1"></i>
-                            </div>
-                        </div>
-                        <!-- txt -->
-                        <div class="ul-footer-top-contact-info-txt">
-                            <span class="ul-footer-top-contact-info-label">Call Emergency</span>
-                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:88012365499">+88 0123 654 99</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="ul-footer-middle">
-            <div class="ul-footer-container">
-                <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
-                    <div class="ul-footer-about">
-                        <a href="index.html"><img src="assets/img/logo-white.svg" alt="logo" class="logo"></a>
-                        <p class="ul-footer-about-txt">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
-                        <div class="ul-footer-socials">
-                            <a href="#"><i class="flaticon-facebook"></i></a>
-                            <a href="#"><i class="flaticon-twitter"></i></a>
-                            <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
-                            <a href="#"><i class="flaticon-youtube"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="ul-footer-widget">
-                        <h3 class="ul-footer-widget-title">Quick Links</h3>
-
-                        <div class="ul-footer-widget-links">
-                            <a href="about.html">About Us</a>
-                            <a href="services.html">Our Services</a>
-                            <a href="blog.html">Our Blogs</a>
-                            <a href="faq.html">FAQ’S</a>
-                            <a href="contact.html">Contact Us</a>
-                        </div>
-                    </div>
-
-                    <div class="ul-footer-widget ul-footer-recent-posts">
-                        <h3 class="ul-footer-widget-title">Recent Posts</h3>
-
-                        <div class="ul-blog-sidebar-posts">
-                            <!-- single post -->
-                            <div class="ul-blog-sidebar-post ul-footer-post">
-                                <div class="img">
-                                    <img src="assets/img/blog-2.jpg" alt="Post Image">
-                                </div>
-
-                                <div class="txt">
-                                    <span class="date">
-                                        <span class="icon"><i class="flaticon-calendar"></i></span>
-                                        <span>May 12, 2025</span>
-                                    </span>
-
-                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
-                                </div>
-                            </div>
-
-                            <!-- single post -->
-                            <div class="ul-blog-sidebar-post ul-footer-post">
-                                <div class="img">
-                                    <img src="assets/img/blog-1.jpg" alt="Post Image">
-                                </div>
-
-                                <div class="txt">
-                                    <span class="date">
-                                        <span class="icon"><i class="flaticon-calendar"></i></span>
-                                        <span>May 12, 2025</span>
-                                    </span>
-
-                                    <h4 class="title"><a href="blog-details.html">There are many vario ns of passages of</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ul-footer-widget ul-nwsltr-widget">
-                        <h3 class="ul-footer-widget-title">Contact Us</h3>
-                        <div class="ul-footer-widget-links ul-footer-contact-links">
-                            <a href="mailto:info@example.com"><i class="flaticon-mail"></i> info@example.com</a>
-                            <a href="tel:123-456-7890"><i class="flaticon-telephone-call"></i> 123-456-7890</a>
-                        </div>
-                        <form action="#" class="ul-nwsltr-form">
-                            <div class="top">
-                                <input type="email" name="email" id="nwsltr-email" placeholder="Your Email Address" class="ul-nwsltr-input">
-                                <button type="submit"><i class="flaticon-next"></i></button>
-                            </div>
-
-                            <div class="agreement">
-                                <label for="nwsltr-agreement" class="ul-checkbox-wrapper">
-                                    <input type="checkbox" name="agreement" id="nwsltr-agreement" hidden>
-                                    <span class="ul-checkbox"><i class="flaticon-tick"></i></span>
-                                    <span class="ul-checkbox-txt">I agree with the <a href="#">Privacy Policy</a></span>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- footer bottom -->
-        <div class="ul-footer-bottom">
-            <div class="ul-footer-container">
-                <div class="ul-footer-bottom-wrapper">
-                    <p class="copyright-txt">&copy;
-                        <span id="footer-copyright-year"></span> Charitics. All rights reserved
-                    </p>
-                    <div class="ul-footer-bottom-nav"><a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- vector -->
-        <div class="ul-footer-vectors">
-            <img src="assets/img/footer-vector-img.png" alt="Footer Image" class="ul-footer-vector-1">
-        </div>
-    </footer>
-    <!-- FOOTER SECTION END -->
-
-    <!-- libraries JS -->
-    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/splide/splide.min.js"></script>
-    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
-    <script src="assets/vendor/animate-wow/wow.min.js"></script>
-    <script src="assets/vendor/splittype/index.min.js"></script>
-    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
-    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
-    <script src="assets/vendor/flatpickr/flatpickr.js"></script>
-
-    <!-- custom JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/tab.js"></script>
-    <!-- <script src="assets/js/countdown.js"></script> -->
-    <script src="assets/js/accordion.js"></script>
-    <script src="assets/js/progressbar.js"></script>
-    <script src="assets/js/donate-form.js"></script>
+    <script>
+        // Create organic dot pattern
+        function createDotPattern() {
+            const pattern = document.getElementById('dotPattern');
+            const positions = [
+                { top: '15%', left: '25%', delay: 0 },
+                { top: '12%', left: '75%', delay: 0.5 },
+                { top: '35%', left: '10%', delay: 1 },
+                { top: '40%', left: '88%', delay: 1.5 },
+                { top: '65%', left: '15%', delay: 2 },
+                { top: '70%', left: '82%', delay: 2.5 },
+                { top: '85%', left: '30%', delay: 3 },
+                { top: '88%', left: '68%', delay: 3.5 },
+                { top: '25%', left: '50%', delay: 1.2 },
+                { top: '75%', left: '50%', delay: 2.2 }
+            ];
+            
+            positions.forEach(pos => {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.style.top = pos.top;
+                dot.style.left = pos.left;
+                dot.style.animationDelay = `${pos.delay}s`;
+                pattern.appendChild(dot);
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            createDotPattern();
+        });
+
+        // Add subtle parallax effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const leaves = document.querySelectorAll('.leaf');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            
+            leaves.forEach((leaf, index) => {
+                const speed = (index + 1) * 0.3;
+                leaf.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
-
 </html>
