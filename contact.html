@@ -203,7 +203,7 @@
           <div class="icon"><i class="flaticon-phone-call"></i></div>
           <div class="txt">
             <span class="title">Phone Number</span>
-            <a href="tel:+234XXXXXXXXXX">+234 XXX XXX XXXX</a>
+            <a href="tel:+2348038759771">+234 803 875 9771</a>
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@
           <div class="icon"><i class="flaticon-comment"></i></div>
           <div class="txt">
             <span class="title">Email Address</span>
-            <a href="mailto:info@ohfwlp.org">info@ohfwlp.org</a>
+            <a href="mailto:elejeotta@gmail.com">elejeotta@gmail.com</a>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@
     <div>
       <span class="ul-section-sub-title">Contact Us</span>
       <h2 class="ul-section-title">
-        Reach Out — We’d Love to Hear From You
+        Reach Out — We'd Love to Hear From You
       </h2>
     </div>
   </div>
@@ -273,30 +273,30 @@
 
         <div class="col">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="text" id="inner-name" name="name" placeholder="Your Full Name" required>
           </div>
         </div>
 
         <div class="col">
           <div class="form-group">
-            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="email" id="inner-email" name="email" placeholder="Email Address" required>
           </div>
         </div>
 
         <div class="col-12">
           <div class="form-group">
-            <input type="text" name="subject" placeholder="Subject (Support, Partnership, Donation)" required>
+            <input type="text" id="inner-subject" name="subject" placeholder="Subject (Support, Partnership, Donation)" required>
           </div>
         </div>
 
         <div class="col-12">
           <div class="form-group">
-            <textarea name="message" placeholder="Write your message here..." required></textarea>
+            <textarea id="inner-message" name="message" placeholder="Write your message here..." required></textarea>
           </div>
         </div>
 
         <div class="col-12 text-center">
-          <button class="ul-btn">
+          <button type="button" class="ul-btn" onclick="sendInnerToWhatsApp()">
             <i class="flaticon-fast-forward-double-right-arrows-symbol"></i>
             Send Message
           </button>
@@ -306,6 +306,30 @@
     </form>
   </div>
 </section>
+
+<script>
+function sendInnerToWhatsApp() {
+    const name    = document.getElementById('inner-name').value.trim();
+    const email   = document.getElementById('inner-email').value.trim();
+    const subject = document.getElementById('inner-subject').value.trim();
+    const message = document.getElementById('inner-message').value.trim();
+
+    if (!name || !message) {
+        alert('Please fill in at least your name and message.');
+        return;
+    }
+
+    const text =
+        `*New Contact Message*\n\n` +
+        `*Name:* ${name}\n` +
+        `*Email:* ${email}\n` +
+        `*Subject:* ${subject}\n` +
+        `*Message:* ${message}`;
+
+    const whatsappURL = `https://wa.me/2348038759771?text=${encodeURIComponent(text)}`;
+    window.open(whatsappURL, '_blank');
+}
+</script>
 <!-- CONTACT SECTION END -->
 
         <!-- CONTACT SECTION END -->
@@ -313,7 +337,7 @@
 
 
     <!-- FOOTER SECTION START -->
-<footer class="ul-footer">
+ <footer class="ul-footer">
         <div class="ul-footer-top">
   <div class="ul-footer-container">
     <div class="ul-footer-top-contact-infos">
@@ -334,7 +358,7 @@
       </div>
 
       <!-- Email -->
-      <div class="ul-footer-top-contact-info">
+      <!-- <div class="ul-footer-top-contact-info">
         <div class="ul-footer-top-contact-info-icon">
           <div class="ul-footer-top-contact-info-icon-inner">
             <i class="flaticon-email"></i>
@@ -346,7 +370,7 @@
             <a href="mailto:info@ohfwlp.org">info@ohfwlp.org</a>
           </h5>
         </div>
-      </div>
+      </div> -->
 
       <!-- Phone -->
       <div class="ul-footer-top-contact-info">
@@ -356,9 +380,9 @@
           </div>
         </div>
         <div class="ul-footer-top-contact-info-txt">
-          <span class="ul-footer-top-contact-info-label">Call Us</span>
+          <span class="ul-footer-top-contact-info-label">Call Us On Phone</span>
           <h5 class="ul-footer-top-contact-info-address">
-            <a href="tel:+234XXXXXXXXXX">+234 XXX XXX XXXX</a>
+            <a href="tel:+2348038759771">+2348038759771</a>
           </h5>
         </div>
       </div>
@@ -382,12 +406,12 @@
           dedicated to caring for widows and vulnerable persons through medical outreach,
           empowerment programmes, prayer, and community support.
         </p>
-        <div class="ul-footer-socials">
+        <!-- <div class="ul-footer-socials">
           <a href="#"><i class="flaticon-facebook"></i></a>
           <a href="#"><i class="flaticon-twitter"></i></a>
           <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
           <a href="#"><i class="flaticon-youtube"></i></a>
-        </div>
+        </div> -->
       </div>
 
       <!-- Quick Links -->
@@ -437,7 +461,7 @@
           </a>
         </div>
 
-        <form action="#" class="ul-nwsltr-form">
+        <!-- <form action="#" class="ul-nwsltr-form">
           <div class="top">
             <input type="email" name="email" placeholder="Your Email Address" class="ul-nwsltr-input">
             <button type="submit"><i class="flaticon-next"></i></button>
@@ -452,7 +476,7 @@
               </span>
             </label>
           </div>
-        </form>
+        </form> -->
       </div>
 
     </div>
